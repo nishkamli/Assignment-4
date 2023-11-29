@@ -1,0 +1,17 @@
+<div class="cards-container">
+
+    <!-- Sample card template using Handlebars syntax -->
+    {{#each books}}
+    <div class="card">
+        <div class="card-header">
+            {{this.title}}
+        </div>
+        <div class="card-body">
+            <img src="{{this.img}}" alt="{{this.title}}" width="200">
+            <p>Author: {{this.author}}</p>
+            <p>Inventory: {{this.inventory}}</p>
+            <p>Category: {{this.category}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

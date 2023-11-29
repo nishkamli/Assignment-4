@@ -1,0 +1,167 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ 
+    width: 100%;
+}
+.highlight {
+    background-color: #e69f9f; /* Light red background */
+}
+
+.cards-container {
+    display: flex;  
+    flex-wrap: wrap;  /* Allow the cards to wrap to the next row when there's not enough space */
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;  
+    width: calc(100% - 30px);  /* By default, cards take the full width minus the margins */
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Form styles */
+form {
+    width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=number] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=date] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=url] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button{
+    background-color: #36a1d3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #37444b;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+.card-body p {
+    margin: 0 0 10px;
+}
+
+/* Responsive design using media queries */
+
+/* For screens wider than 600px */
+@media (min-width: 600px) {
+    .card {
+        width: calc(50% - 30px);  /* Cards take up half the width minus margins */
+        margin: 15px;
+    }
+}
+
+/* For screens wider than 900px */
+@media (min-width: 900px) {
+    .card {
+        width: calc(33.33% - 30px);  /* Cards take up one-third of the width minus margins */
+    }
+}
+
+/* For screens wider than 1200px */
+@media (min-width: 1200px) {
+    .card {
+        width: calc(25% - 30px);  /* Cards take up one-fourth of the width minus margins */
+    }
+}
